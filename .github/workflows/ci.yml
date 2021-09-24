@@ -25,8 +25,8 @@ jobs:
           dockerfile: Dockerfile
           build_extra_args: "--compress=true --label org.opencontainers.image.revision=${{github.sha}} --label org.opencontainers.image.created=${{steps.get-timestamp.outputs.timestamp}}"
           registry: ghcr.io
-          stages_image_name: biosimulators/biosimulators-tutorials-stages
-          image_name: biosimulators/biosimulators-tutorials-stages
+          stages_image_name: biosimulators/biosimulators_tutorials-stages
+          image_name: biosimulators/biosimulators_tutorials-stages
           image_tag: ${{github.sha}}
           push_image_and_stages: true
           username: ${{ secrets.DOCKER_REGISTRY_USERNAME }}
@@ -34,8 +34,8 @@ jobs:
 
       - name: Label Docker image
         run: |
-          docker image tag ghcr.io/biosimulators/biosimulators-tutorials-stages:${{github.sha}} ghcr.io/biosimulators/biosimulators-tutorials:${{github.sha}}
-          docker image tag ghcr.io/biosimulators/biosimulators-tutorials-stages:${{github.sha}} ghcr.io/biosimulators/biosimulators-tutorials:latest
+          docker image tag ghcr.io/biosimulators/biosimulators_tutorials-stages:${{github.sha}} ghcr.io/biosimulators/biosimulators_tutorials:${{github.sha}}
+          docker image tag ghcr.io/biosimulators/biosimulators_tutorials-stages:${{github.sha}} ghcr.io/biosimulators/biosimulators_tutorials:latest
 
       # Test tutorials
       - name: Test tutorials
@@ -44,11 +44,12 @@ jobs:
           docker run \
             --rm \
             --entrypoint bash \
-            --mount type=bind,source=${cwd},target=/app/Biosimulators_tutorials \
-            ghcr.io/biosimulators/biosimulators-tutorials:latest \
+            --mount type=bind,source=${cwd},target=/home/Biosimulators_tutorials \
+            --workdir /home/Biosimulators_tutorials \
+            ghcr.io/biosimulators/biosimulators_tutorials:latest \
             -c "
-              pipenv run pip install nbmake pytest pytest-forked
-              /bin/bash /xvfb-startup.sh pipenv run python -m pytest --forked --verbose --nbmake Biosimulators_tutorials/tutorials/
+              pip install nbmake pytest pytest-forked
+              /bin/bash /xvfb-startup.sh python -m pytest --forked --verbose --nbmake tutorials/
             "
 
       # Get version number
@@ -77,11 +78,11 @@ jobs:
         env:
           VERSION: ${{ steps.get-version-number.outputs.version }}
         run: |
-          docker image tag ghcr.io/biosimulators/biosimulators-tutorials:${{github.sha}} ghcr.io/biosimulators/biosimulators-tutorials:${VERSION}
+          docker image tag ghcr.io/biosimulators/biosimulators_tutorials:${{github.sha}} ghcr.io/biosimulators/biosimulators_tutorials:${VERSION}
 
           docker login ghcr.io \
             --username ${{ secrets.DOCKER_REGISTRY_USERNAME }} \
             --password ${{ secrets.DOCKER_REGISTRY_TOKEN }}
-          docker push ghcr.io/biosimulators/biosimulators-tutorials:${{github.sha}}
-          docker push ghcr.io/biosimulators/biosimulators-tutorials:latest
-          docker push ghcr.io/biosimulators/biosimulators-tutorials:${VERSION}
+          docker push ghcr.io/biosimulators/biosimulators_tutorials:${{github.sha}}
+          docker push ghcr.io/biosimulators/biosimulators_tutorials:latest
+          docker push ghcr.io/biosimulators/biosimulators_tutorials:${VERSION}
