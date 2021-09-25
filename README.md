@@ -6,6 +6,8 @@
 
 This repository contains Jupyter notebooks with tutorials for the Python APIs for the simulation tools registered with BioSimulators and a Jupyter notebook server for running the notebooks.
 
+The tutorials are located in the [`tutorials`](tutorials) subdirectory. The [README](tutorials/README.md) in this directory summarizes the content of the tutorials.
+
 ## Getting started
 
 ### Running the tutorials online with Binder
