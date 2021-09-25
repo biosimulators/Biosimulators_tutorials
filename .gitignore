@@ -1,2 +1,8 @@
 *.pyc
 __pycache__/
+
+tutorials/.cache/
+tutorials/.ipynb_checkpoints/
+tutorials/.ipython/
+tutorials/.jupyter/
+tutorials/.local/
