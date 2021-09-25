@@ -4,11 +4,15 @@ jupyterhub
 jupyterlab
 
 # requirements for notebooks
+biopython
+biosimulators-cbmpy
 biosimulators-copasi
 biosimulators-cobrapy
 biosimulators-tellurium
-biosimulators-utils
+biosimulators-utils[sbml,logging,containers]
+ipython
 kisao
+numpy
 matplotlib
 pyyaml
 requests
