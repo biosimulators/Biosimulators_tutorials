@@ -11,7 +11,8 @@ LABEL \
 
 COPY requirements.txt /tmp/requirements.txt
 RUN pip install -r /tmp/requirements.txt \
-    && rm /tmp/requirements.txt
+    && rm /tmp/requirements.txt \
+    && pip uninstall -y ipyparallel
 
 ARG NB_USER=biosimulators
 ARG NB_UID=1000
