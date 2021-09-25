@@ -14,7 +14,9 @@ RUN pip install \
     jupyterhub \
     jupyterlab \
     matplotlib \
-    pyyaml
+    pyyaml \
+    requests \
+    kisao
 ENV MPLBACKEND=
 
 ARG NB_USER=biosimulators
