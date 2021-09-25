@@ -46,6 +46,7 @@ jobs:
             --entrypoint bash \
             --mount type=bind,source=${cwd},target=/home/Biosimulators_tutorials \
             --workdir /home/Biosimulators_tutorials \
+            --user 0 \
             ghcr.io/biosimulators/biosimulators_tutorials:latest \
             -c "
               pip install -r requirements.tests.txt
