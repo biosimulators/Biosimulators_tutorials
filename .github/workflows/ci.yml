@@ -48,7 +48,7 @@ jobs:
             --workdir /home/Biosimulators_tutorials \
             ghcr.io/biosimulators/biosimulators_tutorials:latest \
             -c "
-              pip install nbmake pytest pytest-forked
+              pip install -r requirements.tests.txt
               /bin/bash /xvfb-startup.sh python -m pytest --forked --verbose --nbmake tutorials/
             "
 

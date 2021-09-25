@@ -9,15 +9,9 @@ LABEL \
     org.opencontainers.image.authors="BioSimulators Team <info@biosimulators.org>" \
     org.opencontainers.image.vendor="BioSimulators Team"
 
-RUN pip install \
-    notebook \
-    jupyterhub \
-    jupyterlab \
-    matplotlib \
-    pyyaml \
-    requests \
-    kisao
-ENV MPLBACKEND=
+COPY requirements.txt /tmp/requirements.txt
+RUN pip install -r /tmp/requirements.txt \
+    && rm /tmp/requirements.txt
 
 ARG NB_USER=biosimulators
 ARG NB_UID=1000

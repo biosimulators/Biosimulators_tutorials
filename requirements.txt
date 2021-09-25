@@ -1,0 +1,10 @@
+# requirements to run Jupyter server
+notebook
+jupyterhub
+jupyterlab
+
+# requirements for notebooks
+kisao
+matplotlib
+pyyaml
+requests
