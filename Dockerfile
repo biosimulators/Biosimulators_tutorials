@@ -29,4 +29,6 @@ RUN chown -R ${NB_UID} ${HOME}
 USER ${NB_USER}
 WORKDIR ${HOME}
 
+ENV PYTHONWARNINGS="ignore::biosimulators_utils.warnings.BioSimulatorsWarning"
+
 CMD /bin/bash /xvfb-startup.sh
