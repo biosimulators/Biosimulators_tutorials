@@ -14,10 +14,19 @@ The tutorials are located in the [`tutorials`](tutorials) subdirectory. The [REA
 The easiest way to run the tutorials is with Binder. Simply open https://mybinder.org/v2/gh/biosimulators/Biosimulators_tutorials/HEAD in your browser.
 
 ### Running the tutorials on your own machine
-Run the following commands to launch a Jupyter notebook server at http://localhost:8888 for the tutorials in this repository:
+Run the following command to download the tutorials:
 ```
 docker pull ghcr.io/biosimulators/tutorials
+```
+
+Run the following command to launch a Jupyter notebook server at http://localhost:8888 for the tutorials in this repository:
+```
 docker run -it --rm -p 8888:8888 ghcr.io/biosimulators/tutorials jupyter notebook --ip=0.0.0.0 --port=8888
+```
+
+Alternatively, run the following command to launch a Jupyter lab server at http://localhost:8888 for the tutorials in this repository:
+```
+docker run -it --rm -p 8888:8888 ghcr.io/biosimulators/tutorials jupyter lab --ip=0.0.0.0 --port=8888
 ```
 
 ## License
