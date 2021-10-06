@@ -12,3 +12,5 @@ This package provides several tutorials for BioSimulators Python APIs for simula
 * Executing simulations
     * [Programatically executing individual simulations](Programmatically%20executing%20individual%20simulations.ipynb)
     * [Programmatically executing entire simulation projects (COMBINE/OMEX archives that contain one or more models and one or more simulations in SED-ML format)](Programmatically%20executing%20simulation%20projects.ipynb)
+* Combining multiple models and/or simulation tools into multi-algorithmic simulations
+    * [Multi-algorithmic simulation of multiple models and simulation tools](Multi-algorithmic%2simulation%2of%2multiple%2models%2and%2simulation%2tools.ipynb)
