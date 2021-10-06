@@ -16,8 +16,8 @@ The easiest way to run the tutorials is with Binder. Simply open https://mybinde
 ### Running the tutorials on your own machine
 Run the following commands to launch a Jupyter notebook server at http://localhost:8888 for the tutorials in this repository:
 ```
-docker pull ghcr.io/biosimulators/biosimulators_tutorials
-docker run -it --rm -p 8888:8888 ghcr.io/biosimulators/biosimulators_tutorials jupyter notebook --ip=0.0.0.0 --port=8888
+docker pull ghcr.io/biosimulators/tutorials
+docker run -it --rm -p 8888:8888 ghcr.io/biosimulators/tutorials jupyter notebook --ip=0.0.0.0 --port=8888
 ```
 
 ## License
