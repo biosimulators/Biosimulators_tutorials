@@ -1,9 +1,9 @@
 *.pyc
 __pycache__/
 
-tutorials/.cache/
-tutorials/.ipynb_checkpoints/
-tutorials/.ipython/
-tutorials/.jupyter/
-tutorials/.local/
-tutorials/tmp/
+.cache/
+.ipynb_checkpoints/
+.ipython/
+.jupyter/
+.local/
+tmp/
