@@ -1,4 +1,4 @@
-FROM ghcr.io/biosimulators/biosimulators:0.0.3
+FROM ghcr.io/biosimulators/biosimulators:0.0.5
 
 LABEL \
     org.opencontainers.image.title="BioSimulators Jupyter server" \
