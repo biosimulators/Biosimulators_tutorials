@@ -9,6 +9,20 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      # Free disk space
+      # Inspiration
+      # - https://github.com/easimon/maximize-build-space/blob/master/action.yml
+      # - https://githubmemory.com/repo/ros-industrial/industrial_ci/issues/648
+      # - https://github.community/t/bigger-github-hosted-runners-disk-space/17267/11
+      - name: Maximize build space
+        run: |
+          sudo apt-get -qq purge build-essential ghc*
+          sudo apt-get clean
+          sudo rm -rf /usr/share/dotnet
+          sudo rm -rf /usr/local/lib/android
+          sudo rm -rf /opt/ghc
+          docker system prune -f
+
       - name: Checkout repository
         uses: actions/checkout@v2.3.4
 
