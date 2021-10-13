@@ -27,7 +27,7 @@ This package provides several tutorials for BioSimulators Python APIs for simula
 ## Getting started
 
 ### Running the tutorials online with Binder
-We recommend using the tutorials online through [Binder](https://mybinder.org/v2/gh/biosimulators/Biosimulators_tutorials/HEAD).
+We recommend using the tutorials online through [Binder](https://tutorial.biosimulators.org/).
 
 ### Installating the BioSimulators tools
 Instructions for installing the BioSimulators simulation tools are available at https://biosimulators.org. A single Docker image with most of the tools is also available ([`ghcr.io/biosimulators/biosimulators`](https://github.com/biosimulators/Biosimulators/pkgs/container/biosimulators)).

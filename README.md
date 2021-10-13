@@ -1,4 +1,4 @@
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/biosimulators/Biosimulators_tutorials/HEAD)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://tutorial.biosimulators.org/)
 
 ![Logo](https://raw.githubusercontent.com/biosimulations/Biosimulations/dev/libs/shared/assets/src/assets/images/biosimulators-logo/logo-white.svg)
 
@@ -11,7 +11,7 @@ The tutorials are located in the [`tutorials`](tutorials) subdirectory. The [REA
 ## Getting started
 
 ### Running the tutorials online with Binder
-The easiest way to run the tutorials is with Binder. Simply open https://mybinder.org/v2/gh/biosimulators/Biosimulators_tutorials/HEAD in your browser.
+The easiest way to run the tutorials is with Binder. Simply open https://tutorial.biosimulators.org/ in your browser.
 
 ### Running the tutorials on your own machine
 Run the following command to download the tutorials:
