@@ -1,4 +1,5 @@
 [![Binder](https://mybinder.org/badge_logo.svg)](https://tutorial.biosimulators.org/)
+[![All Contributors](https://img.shields.io/github/all-contributors/biosimulators/Biosimulators_tutorials/HEAD)](#contributors-)
 
 ![Logo](https://raw.githubusercontent.com/biosimulations/Biosimulations/dev/libs/shared/assets/src/assets/images/biosimulators-logo/logo-white.svg)
 
@@ -35,7 +36,7 @@ This package is released under the [MIT license](LICENSE).
 
 ## Development team
 
-This package was developed by the [Karr Lab](https://www.karrlab.org) at the Icahn School of Medicine at Mount Sinai in New York as part of the [Center for Reproducible Biomodeling Modeling](https://reproduciblebiomodels.org).
+This package was developed by the [Karr Lab](https://www.karrlab.org) at the Icahn School of Medicine at Mount Sinai in New York as part of the [Center for Reproducible Biomodeling Modeling](https://reproduciblebiomodels.org) with assistance from the contributors listed [here](CONTRIBUTORS.md).
 
 - [Bilal Shaikh](https://www.bshaikh.com)
 - [Jonathan Karr](https://www.karrlab.org)
