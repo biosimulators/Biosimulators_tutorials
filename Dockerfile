@@ -4,7 +4,7 @@ LABEL \
     org.opencontainers.image.title="BioSimulators Jupyter server" \
     org.opencontainers.image.description="Jupyter server in a Python environment with the validated simulation tools registered with BioSimulators" \
     org.opencontainers.image.url="https://github.com/biosimulators/Biosimulators_tutorials" \
-    org.opencontainers.image.documentation="https://biosimulators.org/help" \
+    org.opencontainers.image.documentation="https://docs.biosimulations.org/" \
     org.opencontainers.image.source="https://github.com/biosimulators/Biosimulators_tutorials" \
     org.opencontainers.image.authors="BioSimulators Team <info@biosimulators.org>" \
     org.opencontainers.image.vendor="BioSimulators Team"
