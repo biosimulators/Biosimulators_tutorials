@@ -9,7 +9,7 @@ biosimulators-cbmpy
 biosimulators-copasi
 biosimulators-cobrapy
 biosimulators-tellurium
-biosimulators-utils[sbml,logging,containers]>=0.1.145
+biosimulators-utils[sbml,logging,containers]>=0.1.152
 ipython
 kisao
 numpy
