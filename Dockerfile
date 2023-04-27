@@ -12,7 +12,7 @@ LABEL \
 COPY requirements.txt /tmp/requirements.txt
 RUN pip install --upgrade pip 
 RUN pip install --upgrade setuptools wheel
-RUN pip install -r /tmp/requirements.txt \
+RUN pip install -r /tmp/requirements.txt --no-binary :all: \
     && rm /tmp/requirements.txt \
     && pip uninstall -y ipyparallel
 
