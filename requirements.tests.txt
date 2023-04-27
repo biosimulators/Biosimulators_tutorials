@@ -1,3 +1,4 @@
 pytest
 nbmake
 pytest-forked
+nbconvert
