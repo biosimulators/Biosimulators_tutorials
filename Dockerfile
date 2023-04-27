@@ -9,7 +9,7 @@ LABEL \
     org.opencontainers.image.authors="BioSimulators Team <info@biosimulators.org>" \
     org.opencontainers.image.vendor="BioSimulators Team"
 
-RUN apt-get install libglpk-dev
+
 COPY requirements.txt /tmp/requirements.txt
 RUN pip install -r /tmp/requirements.txt \
     && rm /tmp/requirements.txt \
