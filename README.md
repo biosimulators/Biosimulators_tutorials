@@ -1,4 +1,4 @@
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1aI7Z6ZBcQzOc9PJllW9N9oeTcFtXfhTd)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1aI7Z6ZBcQzOc9PJllW9N9oeTcFtXfhTd#offline=true&sandboxMode=true)
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://tutorial.biosimulators.org/)
 [![All Contributors](https://img.shields.io/github/all-contributors/biosimulators/Biosimulators_tutorials/HEAD)](#contributors-)
@@ -7,7 +7,7 @@
 
 # BioSimulators tutorials
 
-This repository contains Jupyter notebooks with tutorials for the Python APIs for the simulation tools registered with BioSimulators and a Jupyter notebook server for running the notebooks. NEW: As an alternative to the Jupyter Notebooks and relative Jupyter Notebook server, we have added a [Google Colab Notebook](https://colab.research.google.com/drive/1aI7Z6ZBcQzOc9PJllW9N9oeTcFtXfhTd) for users that are more comfortable with a shareable, annotatable "sandbox environment". Complete with the required dependencies, input data, and explicitly-defined methods that are essential to interacting with `Biosimulators`, this Google Colab notebook serves as "click and play" experience.
+This repository contains Jupyter notebooks with tutorials for the Python APIs for the simulation tools registered with BioSimulators and a Jupyter notebook server for running the notebooks. NEW: As an alternative to the Jupyter Notebooks and relative Jupyter Notebook server, we have added a [Google Colab Notebook](https://colab.research.google.com/drive/1aI7Z6ZBcQzOc9PJllW9N9oeTcFtXfhTd#offline=true&sandboxMode=true) for users that are more comfortable with a shareable, annotatable "sandbox environment". Complete with the required dependencies, input data, and explicitly-defined methods that are essential to interacting with `Biosimulators`, this Google Colab notebook serves as "click and play" experience.
 
 The tutorials are located in the [`tutorials`](tutorials) subdirectory. The [README](tutorials/README.md) in this directory summarizes the content of the tutorials.
 
@@ -15,7 +15,7 @@ The tutorials are located in the [`tutorials`](tutorials) subdirectory. The [REA
 
 ### Running the tutorials online with Google Colab (web-based, minimal setup)
 
-Simply open https://colab.research.google.com/drive/1aI7Z6ZBcQzOc9PJllW9N9oeTcFtXfhTd in your browser or click on the above Colab badge.
+Simply open [the Colab notebook](https://colab.research.google.com/drive/1aI7Z6ZBcQzOc9PJllW9N9oeTcFtXfhTd#offline=true&sandboxMode=true) in your browser or click on the above Colab badge.
 
 ### Running the tutorials online with Binder
 
