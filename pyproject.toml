@@ -1,0 +1,10 @@
+[build-system]
+requires = ["setuptools", "wheel", "cython"]
+build-backend = "setuptools.build_meta"
+
+[tool.cythondialect]
+include_dirs = ["include"]
+
+[tool.glpk]
+include_dirs = ["include"]
+library_dirs = ["lib"]
